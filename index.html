@@ -8,14 +8,14 @@
 <body>
     <h1>Hello h1</h1>
     <h2>hello h2</h2>
-    <p>Para 1</p>
-    <p>Para 2</p>
-    <p>Para 3</p>
-    <p>Para 4</p>
+    <p class="p">Para 1</p>
+    <p class="p">Para 2</p>
+    <p class="p">Para 3</p>
+    <p class="p">Para 4</p>
     
 </body>
 <script>
-    let paragraph = document.getElementsByTagName("p");
+    let paragraph = document.getElementsByClassName("p");
     // paragraph[0].innerHTML = "Hello BD";
     // paragraph[1].innerHTML = "Hello BD";
     // paragraph[2].innerHTML = "Hello BD";
@@ -25,7 +25,7 @@
    for(let i=0; i < paragraph.length; i++){
     //console.log("object")
     // alert(i)
-    paragraph[i].innerHTML = "Hello BD";
+    paragraph[i].innerHTML = "User" + " " + (i + 1);
     
 
    }
